@@ -1,0 +1,16 @@
+create table if not exists dc_migration_account(
+record_key Integer not null,
+data_catalyst_migration_code Integer null,
+data_catalyst_migration_code_position varchar(255) null,
+data_catalyst_migration_code_length varchar(255) null,
+data_migration_digits_position varchar(255) null,
+data_migration_digits_length varchar(255) null,
+with_holding_tax_position char null,
+with_holding_tax_length varchar(255) null,
+required_tax_position varchar(255) null,
+required_tax_length varchar(255) null,
+fundraising_id_length varchar(255) null,
+fundraising_space varchar(255) null,
+pulse_space_name varchar(255) null,
+future_market varchar(255) null,
+constraint dc_migration_account_pk primary key(record_key));
